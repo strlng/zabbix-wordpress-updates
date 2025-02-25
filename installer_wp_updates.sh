@@ -42,14 +42,14 @@ echo "---------------------------------"
 
 # Download wp_discovery.sh and set permissions
 echo "Downloading wp_discovery.sh..."
-curl -L https://raw.githubusercontent.com/emodii/zabbix-templates/refs/heads/main/Template%20Wordpress%20updates/wp_discovery.sh -o /etc/zabbix/scripts/wp_discovery.sh
+curl -L https://raw.githubusercontent.com/thetorminal/Zabbix-Wordpress-updates/refs/heads/main/wp_discovery.sh -o /etc/zabbix/scripts/wp_discovery.sh
 chown zabbix:zabbix /etc/zabbix/scripts/wp_discovery.sh
 chmod 0755 /etc/zabbix/scripts/wp_discovery.sh
 echo "---------------------------------"
 
 # Download wp_updates.conf
 echo "Downloading wp_updates.conf..."
-curl -L https://raw.githubusercontent.com/emodii/zabbix-templates/refs/heads/main/Template%20Wordpress%20updates/wp_updates.conf -o /etc/zabbix/zabbix_agent2.d/wp_updates.conf
+curl -L https://raw.githubusercontent.com/thetorminal/Zabbix-Wordpress-updates/refs/heads/main/wp_updates.conf -o /etc/zabbix/zabbix_agent2.d/wp_updates.conf
 echo "---------------------------------"
 
 # Restart zabbix-agent2
